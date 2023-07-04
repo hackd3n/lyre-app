@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C304D7F52A5406100010D24A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D7F42A5406100010D24A /* AppDelegate.swift */; };
+		C304D7F72A5406100010D24A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D7F62A5406100010D24A /* SceneDelegate.swift */; };
+		C304D7F92A5406100010D24A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D7F82A5406100010D24A /* ViewController.swift */; };
+		C304D7FC2A5406100010D24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C304D7FA2A5406100010D24A /* Main.storyboard */; };
+		C304D7FF2A5406100010D24A /* lyre_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C304D7FD2A5406100010D24A /* lyre_app.xcdatamodeld */; };
+		C304D8012A5406140010D24A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C304D8002A5406140010D24A /* Assets.xcassets */; };
+		C304D8042A5406140010D24A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C304D8022A5406140010D24A /* LaunchScreen.storyboard */; };
+		C304D80F2A5406140010D24A /* lyre_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D80E2A5406140010D24A /* lyre_appTests.swift */; };
+		C304D8192A5406140010D24A /* lyre_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D8182A5406140010D24A /* lyre_appUITests.swift */; };
+		C304D81B2A5406140010D24A /* lyre_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D81A2A5406140010D24A /* lyre_appUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C304D80B2A5406140010D24A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C304D7E92A5406100010D24A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C304D7F02A5406100010D24A;
+			remoteInfo = "lyre-app";
+		};
+		C304D8152A5406140010D24A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C304D7E92A5406100010D24A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C304D7F02A5406100010D24A;
+			remoteInfo = "lyre-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C304D7F12A5406100010D24A /* lyre-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lyre-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C304D7F42A5406100010D24A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C304D7F62A5406100010D24A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C304D7F82A5406100010D24A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C304D7FB2A5406100010D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C304D7FE2A5406100010D24A /* lyre_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lyre_app.xcdatamodel; sourceTree = "<group>"; };
+		C304D8002A5406140010D24A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C304D8032A5406140010D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C304D8052A5406140010D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C304D80A2A5406140010D24A /* lyre-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lyre-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C304D80E2A5406140010D24A /* lyre_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lyre_appTests.swift; sourceTree = "<group>"; };
+		C304D8142A5406140010D24A /* lyre-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lyre-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C304D8182A5406140010D24A /* lyre_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lyre_appUITests.swift; sourceTree = "<group>"; };
+		C304D81A2A5406140010D24A /* lyre_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lyre_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C304D7EE2A5406100010D24A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C304D8072A5406140010D24A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C304D8112A5406140010D24A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C304D7E82A5406100010D24A = {
+			isa = PBXGroup;
+			children = (
+				C304D7F32A5406100010D24A /* lyre-app */,
+				C304D80D2A5406140010D24A /* lyre-appTests */,
+				C304D8172A5406140010D24A /* lyre-appUITests */,
+				C304D7F22A5406100010D24A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C304D7F22A5406100010D24A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C304D7F12A5406100010D24A /* lyre-app.app */,
+				C304D80A2A5406140010D24A /* lyre-appTests.xctest */,
+				C304D8142A5406140010D24A /* lyre-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C304D7F32A5406100010D24A /* lyre-app */ = {
+			isa = PBXGroup;
+			children = (
+				C304D7F42A5406100010D24A /* AppDelegate.swift */,
+				C304D7F62A5406100010D24A /* SceneDelegate.swift */,
+				C304D7F82A5406100010D24A /* ViewController.swift */,
+				C304D7FA2A5406100010D24A /* Main.storyboard */,
+				C304D8002A5406140010D24A /* Assets.xcassets */,
+				C304D8022A5406140010D24A /* LaunchScreen.storyboard */,
+				C304D8052A5406140010D24A /* Info.plist */,
+				C304D7FD2A5406100010D24A /* lyre_app.xcdatamodeld */,
+			);
+			path = "lyre-app";
+			sourceTree = "<group>";
+		};
+		C304D80D2A5406140010D24A /* lyre-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				C304D80E2A5406140010D24A /* lyre_appTests.swift */,
+			);
+			path = "lyre-appTests";
+			sourceTree = "<group>";
+		};
+		C304D8172A5406140010D24A /* lyre-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C304D8182A5406140010D24A /* lyre_appUITests.swift */,
+				C304D81A2A5406140010D24A /* lyre_appUITestsLaunchTests.swift */,
+			);
+			path = "lyre-appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C304D7F02A5406100010D24A /* lyre-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C304D81E2A5406140010D24A /* Build configuration list for PBXNativeTarget "lyre-app" */;
+			buildPhases = (
+				C304D7ED2A5406100010D24A /* Sources */,
+				C304D7EE2A5406100010D24A /* Frameworks */,
+				C304D7EF2A5406100010D24A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lyre-app";
+			productName = "lyre-app";
+			productReference = C304D7F12A5406100010D24A /* lyre-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C304D8092A5406140010D24A /* lyre-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C304D8212A5406140010D24A /* Build configuration list for PBXNativeTarget "lyre-appTests" */;
+			buildPhases = (
+				C304D8062A5406140010D24A /* Sources */,
+				C304D8072A5406140010D24A /* Frameworks */,
+				C304D8082A5406140010D24A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C304D80C2A5406140010D24A /* PBXTargetDependency */,
+			);
+			name = "lyre-appTests";
+			productName = "lyre-appTests";
+			productReference = C304D80A2A5406140010D24A /* lyre-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C304D8132A5406140010D24A /* lyre-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C304D8242A5406140010D24A /* Build configuration list for PBXNativeTarget "lyre-appUITests" */;
+			buildPhases = (
+				C304D8102A5406140010D24A /* Sources */,
+				C304D8112A5406140010D24A /* Frameworks */,
+				C304D8122A5406140010D24A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C304D8162A5406140010D24A /* PBXTargetDependency */,
+			);
+			name = "lyre-appUITests";
+			productName = "lyre-appUITests";
+			productReference = C304D8142A5406140010D24A /* lyre-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C304D7E92A5406100010D24A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C304D7F02A5406100010D24A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					C304D8092A5406140010D24A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C304D7F02A5406100010D24A;
+					};
+					C304D8132A5406140010D24A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C304D7F02A5406100010D24A;
+					};
+				};
+			};
+			buildConfigurationList = C304D7EC2A5406100010D24A /* Build configuration list for PBXProject "lyre-app" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C304D7E82A5406100010D24A;
+			productRefGroup = C304D7F22A5406100010D24A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C304D7F02A5406100010D24A /* lyre-app */,
+				C304D8092A5406140010D24A /* lyre-appTests */,
+				C304D8132A5406140010D24A /* lyre-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C304D7EF2A5406100010D24A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C304D8042A5406140010D24A /* LaunchScreen.storyboard in Resources */,
+				C304D8012A5406140010D24A /* Assets.xcassets in Resources */,
+				C304D7FC2A5406100010D24A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C304D8082A5406140010D24A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C304D8122A5406140010D24A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C304D7ED2A5406100010D24A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C304D7F92A5406100010D24A /* ViewController.swift in Sources */,
+				C304D7FF2A5406100010D24A /* lyre_app.xcdatamodeld in Sources */,
+				C304D7F52A5406100010D24A /* AppDelegate.swift in Sources */,
+				C304D7F72A5406100010D24A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C304D8062A5406140010D24A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C304D80F2A5406140010D24A /* lyre_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C304D8102A5406140010D24A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C304D81B2A5406140010D24A /* lyre_appUITestsLaunchTests.swift in Sources */,
+				C304D8192A5406140010D24A /* lyre_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C304D80C2A5406140010D24A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C304D7F02A5406100010D24A /* lyre-app */;
+			targetProxy = C304D80B2A5406140010D24A /* PBXContainerItemProxy */;
+		};
+		C304D8162A5406140010D24A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C304D7F02A5406100010D24A /* lyre-app */;
+			targetProxy = C304D8152A5406140010D24A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C304D7FA2A5406100010D24A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C304D7FB2A5406100010D24A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C304D8022A5406140010D24A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C304D8032A5406140010D24A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C304D81C2A5406140010D24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C304D81D2A5406140010D24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C304D81F2A5406140010D24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZW99DSFZK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lyre-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "denis-hackett.lyre-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C304D8202A5406140010D24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZW99DSFZK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lyre-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "denis-hackett.lyre-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C304D8222A5406140010D24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZW99DSFZK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "denis-hackett.lyre-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lyre-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lyre-app";
+			};
+			name = Debug;
+		};
+		C304D8232A5406140010D24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZW99DSFZK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "denis-hackett.lyre-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lyre-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lyre-app";
+			};
+			name = Release;
+		};
+		C304D8252A5406140010D24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZW99DSFZK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "denis-hackett.lyre-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lyre-app";
+			};
+			name = Debug;
+		};
+		C304D8262A5406140010D24A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZW99DSFZK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "denis-hackett.lyre-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lyre-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C304D7EC2A5406100010D24A /* Build configuration list for PBXProject "lyre-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C304D81C2A5406140010D24A /* Debug */,
+				C304D81D2A5406140010D24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C304D81E2A5406140010D24A /* Build configuration list for PBXNativeTarget "lyre-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C304D81F2A5406140010D24A /* Debug */,
+				C304D8202A5406140010D24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C304D8212A5406140010D24A /* Build configuration list for PBXNativeTarget "lyre-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C304D8222A5406140010D24A /* Debug */,
+				C304D8232A5406140010D24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C304D8242A5406140010D24A /* Build configuration list for PBXNativeTarget "lyre-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C304D8252A5406140010D24A /* Debug */,
+				C304D8262A5406140010D24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C304D7FD2A5406100010D24A /* lyre_app.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C304D7FE2A5406100010D24A /* lyre_app.xcdatamodel */,
+			);
+			currentVersion = C304D7FE2A5406100010D24A /* lyre_app.xcdatamodel */;
+			path = lyre_app.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C304D7E92A5406100010D24A /* Project object */;
+}
