@@ -11,4 +11,4 @@ Podfile.lock
 .build/
 
 # Exclude MP3 files
-.mp3
+*.mp3
