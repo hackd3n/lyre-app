@@ -148,7 +148,7 @@ class PlayerView : UIViewController {
             let btn = UIButton()
             btn.backgroundColor = .red
             btn.layer.borderColor = UIColor.black.cgColor // Set the border color to CGColor
-            btn.layer.cornerRadius = btn.bounds.width / 2.0
+            btn.layer.cornerRadius = 16
             btn.translatesAutoresizingMaskIntoConstraints = false
             buttons.append(btn)
         }
@@ -214,15 +214,36 @@ class PlayerView : UIViewController {
         stemView.isHidden = true
         
         view.backgroundColor = .white
-        var toggleButtonTopConstraint: NSLayoutConstraint!
-        
-//        if UIScreen.main.bounds.height <= 568 { // Check for smaller screen size like iPhone SE
-//            toggleButtonTopConstraint = toggleButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 20)
-//        } else {
-//            toggleButtonTopConstraint = toggleButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -32)
-//        }
+
         
         
+        // Create a stack view to manage the layout of the stem buttons
+        let stackView = UIStackView(arrangedSubviews: stemButtons)
+        stackView.axis = .vertical
+        stackView.spacing = 16
+        stackView.alignment = .center
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Calculate the number of buttons per row based on the track count
+        let buttonsPerRow = song.trackURLs.count
+        let numberOfRows = Int(ceil(Double(stemButtons.count) / Double(buttonsPerRow)))
+        
+        // Loop through the buttons and add them to the stack view row by row
+        for row in 0..<numberOfRows {
+            let startIndex = row * buttonsPerRow
+            let endIndex = min(startIndex + buttonsPerRow, stemButtons.count)
+            
+            let rowButtons = Array(stemButtons[startIndex..<endIndex])
+            let rowStackView = UIStackView(arrangedSubviews: rowButtons)
+            rowStackView.axis = .horizontal
+            rowStackView.spacing = 16
+            rowStackView.alignment = .center
+            rowStackView.distribution = .fillEqually
+            stackView.addArrangedSubview(rowStackView)
+        }
+            
+        
+        stemView.addSubview(stackView)
         
         NSLayoutConstraint.activate([
             view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -286,10 +307,15 @@ class PlayerView : UIViewController {
             stemView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             stemView.topAnchor.constraint(equalTo: artistName.bottomAnchor, constant: 8),
             stemView.bottomAnchor.constraint(equalTo: volume.topAnchor, constant: -8),
+            
+            stackView.leadingAnchor.constraint(equalTo: stemView.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: stemView.trailingAnchor),
+            stackView.topAnchor.constraint(equalTo: stemView.topAnchor, constant: 16),
+            stackView.bottomAnchor.constraint(equalTo: stemView.bottomAnchor, constant: -16)
 
 
         ])
-
+        startMetering() 
             
             print("Controls View Height: \(controlsView.bounds.height)")
 
@@ -354,7 +380,7 @@ class PlayerView : UIViewController {
     
     @objc func toggleButtonPressed() {
         controlsView.isHidden.toggle()
-        
+        stemView.isHidden.toggle()
         if !controlsView.isHidden {
             toggleButton.backgroundColor = .clear
             toggleButton.setTitleColor(.gray, for: .normal)
@@ -371,6 +397,23 @@ class PlayerView : UIViewController {
 
         }
     }
+    
+
+
+    func startMetering() {
+        for (index, button) in stemButtons.enumerated() {
+            trackPlayer.connectTap(index: index) { meterLevel in
+                DispatchQueue.main.async {
+                    // Convert meterLevel to CGFloat
+                    let normalizedLevel = CGFloat(meterLevel)
+                    // Update the button color based on the meterLevel value
+                    button.backgroundColor = UIColor(red: normalizedLevel, green: 0.0, blue: 0.0, alpha: 1.0)
+                }
+            }
+        }
+    }
+
+
 
 
 
