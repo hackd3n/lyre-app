@@ -15,8 +15,8 @@ Lyre App is a music player app developed using Swift and Xcode. It allows users 
 ## Screenshots
 
 ![Screenshot 1](screenshots/Simulator Screenshot - iPhone 14 Pro - 2023-07-05 at 15.31.30.png)
-![Screenshot 2](Simulator Screenshot - iPhone 14 Pro - 2023-07-05 at 15.31.41.png)
-![Screenshot 2](Simulator Screenshot - iPhone 14 Pro - 2023-07-05 at 15.31.50.png)
+![Screenshot 2](screenshots/Simulator Screenshot - iPhone 14 Pro - 2023-07-05 at 15.31.41.png)
+![Screenshot 2](screenshots/Simulator Screenshot - iPhone 14 Pro - 2023-07-05 at 15.31.50.png)
 
 ## Installation
 
