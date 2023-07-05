@@ -144,12 +144,14 @@ class PlayerView : UIViewController {
         
         let totalNumTracks = groupCount * groups
         
-        for _ in 0 ..< totalNumTracks {
+        for index in 0 ..< totalNumTracks {
             let btn = UIButton()
             btn.backgroundColor = .red
             btn.layer.borderColor = UIColor.black.cgColor // Set the border color to CGColor
             btn.layer.cornerRadius = 16
             btn.translatesAutoresizingMaskIntoConstraints = false
+            btn.tag = index
+            btn.addTarget(self, action: #selector(stemButtonPressed(sender:)), for: .touchUpInside)
             buttons.append(btn)
         }
         
@@ -315,7 +317,7 @@ class PlayerView : UIViewController {
 
 
         ])
-        startMetering() 
+        startMetering()
             
             print("Controls View Height: \(controlsView.bounds.height)")
 
@@ -396,6 +398,12 @@ class PlayerView : UIViewController {
 //            artworkView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2).isActive = true
 
         }
+    }
+    
+    @objc func stemButtonPressed(sender: UIButton){
+        
+        let trackNum = sender.tag
+        trackPlayer.toggleMute(index: trackNum)
     }
     
 

@@ -129,10 +129,12 @@ class TrackPlayer {
     func stopPlayback() {
         for playerNode in audioPlayerNodes {
             playerNode.stop()
+            playerNode.removeTap(onBus: 0)
         }
         
         audioEngine.stop()
         audioEngine.reset()
+        
         
     }
     
@@ -205,9 +207,17 @@ class TrackPlayer {
             
             meterLevel = self.scaledPower(power: avgPower)
             
+            if(self.audioPlayerNodes[index].volume == 0.0){
+                meterLevel = 0
+            }
+            
             completion(meterLevel)
             
         }
+    }
+    
+    private func disconnectVolumeTap(index: Int) {
+        audioPlayerNodes[index].removeTap(onBus: 0)
     }
         
     private func scaledPower(power: Float) -> Float {
@@ -224,6 +234,15 @@ class TrackPlayer {
           } else {
             return (abs(minDb) - abs(power)) / abs(minDb)
           }
+    }
+    
+    func toggleMute(index: Int){
+        
+        if(audioPlayerNodes[index].volume == 0.0) {
+            audioPlayerNodes[index].volume = 1.0
+        } else {
+            audioPlayerNodes[index].volume = 0.0
         }
+    }
 
 }
