@@ -147,7 +147,8 @@ class PlayerView : UIViewController {
         for index in 0 ..< totalNumTracks {
             let btn = UIButton()
             btn.backgroundColor = .red
-            btn.layer.borderColor = UIColor.black.cgColor // Set the border color to CGColor
+            btn.layer.borderColor = UIColor.gray.cgColor // Set the border color to CGColor
+            btn.layer.borderWidth = 4
             btn.layer.cornerRadius = 16
             btn.translatesAutoresizingMaskIntoConstraints = false
             btn.tag = index
@@ -404,6 +405,13 @@ class PlayerView : UIViewController {
         
         let trackNum = sender.tag
         trackPlayer.toggleMute(index: trackNum)
+        
+        if(sender.layer.borderWidth == 0){
+            sender.layer.borderWidth = 4
+            
+        } else {
+            sender.layer.borderWidth = 0
+        }
     }
     
 

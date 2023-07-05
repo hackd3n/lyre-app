@@ -54,8 +54,8 @@ class ViewController: UIViewController, UITableViewDelegate {
         // Populate with your actual tracks data
 //        Track(albumArt: UIImage(named: "LYRE.png")!, title: "Sample Track Name", artist: "John Doe", trackURLs: TrackList.refract()),
 //        Track(albumArt: UIImage(named: "LYRE.png")!, title: "Sample Track Name", artist: "John Doe", trackURLs: TrackList.letsGroove()),
-        Track(albumArt: UIImage(named: "ubiquitos-cover.jpg")!, title: "Ubiquitous", artist: "Albert Kader", trackURLs: TrackList.Ubitquitous())
-//        Track(albumArt: UIImage(named: "LYRE.png")!, title: "Sample Track Name", artist: "John Doe", trackURLs: TrackList.whiptails()),
+        Track(albumArt: UIImage(named: "ubiquitos-cover.jpg")!, title: "Ubiquitous", artist: "Albert Kader", trackURLs: TrackList.Ubitquitous()),
+        Track(albumArt: UIImage(named: "whiptails-cover.jpg")!, title: "Sample Track Name", artist: "Albert Kader", trackURLs: TrackList.whiptails())
 //        Track(albumArt: UIImage(named: "LYRE.png")!, title: "ABCDEFU", artist: "John Doe", trackURLs: TrackList.ABCDEFU())
     ]
 
