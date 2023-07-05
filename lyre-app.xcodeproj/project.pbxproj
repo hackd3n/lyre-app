@@ -93,6 +93,33 @@
 		C304D89A2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86F2A547B9E0010D24A /* other (CLEAN).mp3 */; };
 		C304D89B2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86F2A547B9E0010D24A /* other (CLEAN).mp3 */; };
 		C304D89C2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86F2A547B9E0010D24A /* other (CLEAN).mp3 */; };
+		C3DBD6722A559FFA0096BB0C /* 02_HiHat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD6692A559FF90096BB0C /* 02_HiHat1.mp3 */; };
+		C3DBD6732A559FFA0096BB0C /* 02_HiHat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD6692A559FF90096BB0C /* 02_HiHat1.mp3 */; };
+		C3DBD6742A559FFA0096BB0C /* 02_HiHat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD6692A559FF90096BB0C /* 02_HiHat1.mp3 */; };
+		C3DBD6752A559FFA0096BB0C /* HiHat-Claps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66A2A559FF90096BB0C /* HiHat-Claps.mp3 */; };
+		C3DBD6762A559FFA0096BB0C /* HiHat-Claps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66A2A559FF90096BB0C /* HiHat-Claps.mp3 */; };
+		C3DBD6772A559FFA0096BB0C /* HiHat-Claps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66A2A559FF90096BB0C /* HiHat-Claps.mp3 */; };
+		C3DBD6782A559FFA0096BB0C /* 11_Synth2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66B2A559FF90096BB0C /* 11_Synth2.mp3 */; };
+		C3DBD6792A559FFA0096BB0C /* 11_Synth2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66B2A559FF90096BB0C /* 11_Synth2.mp3 */; };
+		C3DBD67A2A559FFA0096BB0C /* 11_Synth2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66B2A559FF90096BB0C /* 11_Synth2.mp3 */; };
+		C3DBD67B2A559FFA0096BB0C /* 06_SFX2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66C2A559FF90096BB0C /* 06_SFX2.mp3 */; };
+		C3DBD67C2A559FFA0096BB0C /* 06_SFX2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66C2A559FF90096BB0C /* 06_SFX2.mp3 */; };
+		C3DBD67D2A559FFA0096BB0C /* 06_SFX2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66C2A559FF90096BB0C /* 06_SFX2.mp3 */; };
+		C3DBD67E2A559FFA0096BB0C /* 05_SFX1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66D2A559FFA0096BB0C /* 05_SFX1.mp3 */; };
+		C3DBD67F2A559FFA0096BB0C /* 05_SFX1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66D2A559FFA0096BB0C /* 05_SFX1.mp3 */; };
+		C3DBD6802A559FFA0096BB0C /* 05_SFX1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66D2A559FFA0096BB0C /* 05_SFX1.mp3 */; };
+		C3DBD6812A559FFA0096BB0C /* 01_Kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66E2A559FFA0096BB0C /* 01_Kick.mp3 */; };
+		C3DBD6822A559FFA0096BB0C /* 01_Kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66E2A559FFA0096BB0C /* 01_Kick.mp3 */; };
+		C3DBD6832A559FFA0096BB0C /* 01_Kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66E2A559FFA0096BB0C /* 01_Kick.mp3 */; };
+		C3DBD6842A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66F2A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 */; };
+		C3DBD6852A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66F2A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 */; };
+		C3DBD6862A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD66F2A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 */; };
+		C3DBD6872A559FFA0096BB0C /* 08_Bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD6702A559FFA0096BB0C /* 08_Bass.mp3 */; };
+		C3DBD6882A559FFA0096BB0C /* 08_Bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD6702A559FFA0096BB0C /* 08_Bass.mp3 */; };
+		C3DBD6892A559FFA0096BB0C /* 08_Bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD6702A559FFA0096BB0C /* 08_Bass.mp3 */; };
+		C3DBD68A2A559FFA0096BB0C /* synth-shakers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD6712A559FFA0096BB0C /* synth-shakers.mp3 */; };
+		C3DBD68B2A559FFA0096BB0C /* synth-shakers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD6712A559FFA0096BB0C /* synth-shakers.mp3 */; };
+		C3DBD68C2A559FFA0096BB0C /* synth-shakers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3DBD6712A559FFA0096BB0C /* synth-shakers.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +183,15 @@
 		C304D86D2A547B9E0010D24A /* other.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = other.mp3; sourceTree = "<group>"; };
 		C304D86E2A547B9E0010D24A /* instrumental (ORIGINAL).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "instrumental (ORIGINAL).mp3"; sourceTree = "<group>"; };
 		C304D86F2A547B9E0010D24A /* other (CLEAN).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "other (CLEAN).mp3"; sourceTree = "<group>"; };
+		C3DBD6692A559FF90096BB0C /* 02_HiHat1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_HiHat1.mp3; sourceTree = "<group>"; };
+		C3DBD66A2A559FF90096BB0C /* HiHat-Claps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "HiHat-Claps.mp3"; sourceTree = "<group>"; };
+		C3DBD66B2A559FF90096BB0C /* 11_Synth2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11_Synth2.mp3; sourceTree = "<group>"; };
+		C3DBD66C2A559FF90096BB0C /* 06_SFX2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_SFX2.mp3; sourceTree = "<group>"; };
+		C3DBD66D2A559FFA0096BB0C /* 05_SFX1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_SFX1.mp3; sourceTree = "<group>"; };
+		C3DBD66E2A559FFA0096BB0C /* 01_Kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Kick.mp3; sourceTree = "<group>"; };
+		C3DBD66F2A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10_Synth2_PitchModulated.mp3; sourceTree = "<group>"; };
+		C3DBD6702A559FFA0096BB0C /* 08_Bass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_Bass.mp3; sourceTree = "<group>"; };
+		C3DBD6712A559FFA0096BB0C /* synth-shakers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "synth-shakers.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +305,15 @@
 		C304D85F2A54617E0010D24A /* Ubiquitous */ = {
 			isa = PBXGroup;
 			children = (
+				C3DBD66E2A559FFA0096BB0C /* 01_Kick.mp3 */,
+				C3DBD6692A559FF90096BB0C /* 02_HiHat1.mp3 */,
+				C3DBD66D2A559FFA0096BB0C /* 05_SFX1.mp3 */,
+				C3DBD66C2A559FF90096BB0C /* 06_SFX2.mp3 */,
+				C3DBD6702A559FFA0096BB0C /* 08_Bass.mp3 */,
+				C3DBD66F2A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 */,
+				C3DBD66B2A559FF90096BB0C /* 11_Synth2.mp3 */,
+				C3DBD66A2A559FF90096BB0C /* HiHat-Claps.mp3 */,
+				C3DBD6712A559FFA0096BB0C /* synth-shakers.mp3 */,
 				C304D83B2A54613D0010D24A /* 01_Kick.mp3 */,
 				C304D8422A5461740010D24A /* 02_HiHat1.mp3 */,
 				C304D8432A5461740010D24A /* 05_SFX1.mp3 */,
@@ -412,18 +457,26 @@
 				C304D8852A547B9E0010D24A /* vocals (ORIGINAL).mp3 in Resources */,
 				C304D8532A5461740010D24A /* 05_SFX1.mp3 in Resources */,
 				C304D8762A547B9E0010D24A /* instrumental (CLEAN).mp3 in Resources */,
+				C3DBD6842A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 in Resources */,
+				C3DBD67B2A559FFA0096BB0C /* 06_SFX2.mp3 in Resources */,
+				C3DBD6782A559FFA0096BB0C /* 11_Synth2.mp3 in Resources */,
 				C304D88B2A547B9E0010D24A /* drums (CLEAN).mp3 in Resources */,
 				C304D8792A547B9E0010D24A /* drums (ORIGINAL).mp3 in Resources */,
 				C304D87C2A547B9E0010D24A /* other (ORIGINAL).mp3 in Resources */,
 				C304D8012A5406140010D24A /* Assets.xcassets in Resources */,
+				C3DBD6752A559FFA0096BB0C /* HiHat-Claps.mp3 in Resources */,
 				C304D7FC2A5406100010D24A /* Main.storyboard in Resources */,
+				C3DBD6812A559FFA0096BB0C /* 01_Kick.mp3 in Resources */,
 				C304D8942A547B9E0010D24A /* other.mp3 in Resources */,
 				C304D8732A547B9E0010D24A /* drums.mp3 in Resources */,
 				C304D8562A5461740010D24A /* 11_Synth2.mp3 in Resources */,
+				C3DBD67E2A559FFA0096BB0C /* 05_SFX1.mp3 in Resources */,
 				C304D89A2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */,
+				C3DBD6872A559FFA0096BB0C /* 08_Bass.mp3 in Resources */,
 				C304D8822A547B9E0010D24A /* bass (ORIGINAL).mp3 in Resources */,
 				C304D8972A547B9E0010D24A /* instrumental (ORIGINAL).mp3 in Resources */,
 				C304D88E2A547B9E0010D24A /* vocals.mp3 in Resources */,
+				C3DBD68A2A559FFA0096BB0C /* synth-shakers.mp3 in Resources */,
 				C304D8502A5461740010D24A /* 02_HiHat1.mp3 in Resources */,
 				C304D8592A5461740010D24A /* HiHat-Claps.mp3 in Resources */,
 				C304D8472A5461740010D24A /* 06_SFX2.mp3 in Resources */,
@@ -435,6 +488,7 @@
 				C304D83C2A54613D0010D24A /* 01_Kick.mp3 in Resources */,
 				C304D85C2A5461740010D24A /* synth-shakers.mp3 in Resources */,
 				C304D8912A547B9E0010D24A /* bass.mp3 in Resources */,
+				C3DBD6722A559FFA0096BB0C /* 02_HiHat1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,18 +507,27 @@
 				C304D88C2A547B9E0010D24A /* drums (CLEAN).mp3 in Resources */,
 				C304D84B2A5461740010D24A /* 10_Synth2_PitchModulated.mp3 in Resources */,
 				C304D8862A547B9E0010D24A /* vocals (ORIGINAL).mp3 in Resources */,
+				C3DBD68B2A559FFA0096BB0C /* synth-shakers.mp3 in Resources */,
 				C304D87A2A547B9E0010D24A /* drums (ORIGINAL).mp3 in Resources */,
 				C304D85D2A5461740010D24A /* synth-shakers.mp3 in Resources */,
 				C304D8572A5461740010D24A /* 11_Synth2.mp3 in Resources */,
 				C304D8772A547B9E0010D24A /* instrumental (CLEAN).mp3 in Resources */,
 				C304D8952A547B9E0010D24A /* other.mp3 in Resources */,
 				C304D8512A5461740010D24A /* 02_HiHat1.mp3 in Resources */,
+				C3DBD6762A559FFA0096BB0C /* HiHat-Claps.mp3 in Resources */,
 				C304D8482A5461740010D24A /* 06_SFX2.mp3 in Resources */,
+				C3DBD67F2A559FFA0096BB0C /* 05_SFX1.mp3 in Resources */,
 				C304D8982A547B9E0010D24A /* instrumental (ORIGINAL).mp3 in Resources */,
+				C3DBD6822A559FFA0096BB0C /* 01_Kick.mp3 in Resources */,
 				C304D87D2A547B9E0010D24A /* other (ORIGINAL).mp3 in Resources */,
+				C3DBD6852A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 in Resources */,
+				C3DBD67C2A559FFA0096BB0C /* 06_SFX2.mp3 in Resources */,
+				C3DBD6882A559FFA0096BB0C /* 08_Bass.mp3 in Resources */,
 				C304D8802A547B9E0010D24A /* bass (CLEAN).mp3 in Resources */,
 				C304D89B2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */,
 				C304D8892A547B9E0010D24A /* vocals (CLEAN).mp3 in Resources */,
+				C3DBD6732A559FFA0096BB0C /* 02_HiHat1.mp3 in Resources */,
+				C3DBD6792A559FFA0096BB0C /* 11_Synth2.mp3 in Resources */,
 				C304D8742A547B9E0010D24A /* drums.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,18 +547,27 @@
 				C304D88D2A547B9E0010D24A /* drums (CLEAN).mp3 in Resources */,
 				C304D84C2A5461740010D24A /* 10_Synth2_PitchModulated.mp3 in Resources */,
 				C304D8872A547B9E0010D24A /* vocals (ORIGINAL).mp3 in Resources */,
+				C3DBD68C2A559FFA0096BB0C /* synth-shakers.mp3 in Resources */,
 				C304D87B2A547B9E0010D24A /* drums (ORIGINAL).mp3 in Resources */,
 				C304D85E2A5461740010D24A /* synth-shakers.mp3 in Resources */,
 				C304D8582A5461740010D24A /* 11_Synth2.mp3 in Resources */,
 				C304D8782A547B9E0010D24A /* instrumental (CLEAN).mp3 in Resources */,
 				C304D8962A547B9E0010D24A /* other.mp3 in Resources */,
 				C304D8522A5461740010D24A /* 02_HiHat1.mp3 in Resources */,
+				C3DBD6772A559FFA0096BB0C /* HiHat-Claps.mp3 in Resources */,
 				C304D8492A5461740010D24A /* 06_SFX2.mp3 in Resources */,
+				C3DBD6802A559FFA0096BB0C /* 05_SFX1.mp3 in Resources */,
 				C304D8992A547B9E0010D24A /* instrumental (ORIGINAL).mp3 in Resources */,
+				C3DBD6832A559FFA0096BB0C /* 01_Kick.mp3 in Resources */,
 				C304D87E2A547B9E0010D24A /* other (ORIGINAL).mp3 in Resources */,
+				C3DBD6862A559FFA0096BB0C /* 10_Synth2_PitchModulated.mp3 in Resources */,
+				C3DBD67D2A559FFA0096BB0C /* 06_SFX2.mp3 in Resources */,
+				C3DBD6892A559FFA0096BB0C /* 08_Bass.mp3 in Resources */,
 				C304D8812A547B9E0010D24A /* bass (CLEAN).mp3 in Resources */,
 				C304D89C2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */,
 				C304D88A2A547B9E0010D24A /* vocals (CLEAN).mp3 in Resources */,
+				C3DBD6742A559FFA0096BB0C /* 02_HiHat1.mp3 in Resources */,
+				C3DBD67A2A559FFA0096BB0C /* 11_Synth2.mp3 in Resources */,
 				C304D8752A547B9E0010D24A /* drums.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
