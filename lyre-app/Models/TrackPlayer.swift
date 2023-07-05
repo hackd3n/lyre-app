@@ -170,5 +170,60 @@ class TrackPlayer {
                 playerNode.play()
             }
         }
+    
+    func connectTap(index: Int, completion: @escaping (Float) -> Void) {
+        
+        var meterLevel: Float = 0
+        
+        let bufferSize = 1024
+        let buffer = AVAudioPCMBuffer(pcmFormat: audioPlayerNodes[index].outputFormat(forBus: 0), frameCapacity: AVAudioFrameCount(bufferSize))!
+        
+        audioPlayerNodes[index].outputFormat(forBus: 0)
+        audioPlayerNodes[index].installTap(onBus: 0,
+                                        bufferSize: AVAudioFrameCount(bufferSize),
+                                        format: audioPlayerNodes[index].outputFormat(forBus: 0)
+        ) { buffer, _ in
+            // 3
+            guard let channelData = buffer.floatChannelData else {
+                return
+            }
+            let channelDataValue = channelData.pointee
+            // 4
+            let channelDataValueArray = stride(
+                from: 0,
+                to: Int(buffer.frameLength),
+                by: buffer.stride)
+                .map { channelDataValue[$0] }
+            
+            // 5
+            let rms = sqrt(channelDataValueArray.map {
+                return $0 * $0
+            }
+                .reduce(0, +) / Float(buffer.frameLength))
+            
+            let avgPower = 20 * log10(rms)
+            
+            meterLevel = self.scaledPower(power: avgPower)
+            
+            completion(meterLevel)
+            
+        }
+    }
+        
+    private func scaledPower(power: Float) -> Float {
+          guard power.isFinite else {
+            return 0.0
+          }
+
+          let minDb: Float = -80
+
+          if power < minDb {
+            return 0.0
+          } else if power >= 1.0 {
+            return 1.0
+          } else {
+            return (abs(minDb) - abs(power)) / abs(minDb)
+          }
+        }
 
 }
