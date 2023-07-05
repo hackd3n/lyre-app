@@ -80,7 +80,7 @@ class PlayerView : UIViewController {
     let controlsView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.borderWidth = 1
+//        view.layer.borderWidth = 1
         return view
     }()
     
@@ -253,7 +253,7 @@ class PlayerView : UIViewController {
             toggleButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 128),
             toggleButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -128),
 //            toggleButtonTopConstraint,
-            toggleButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -1),
+            toggleButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -22),
 
             controlsView.topAnchor.constraint(equalTo: artistName.bottomAnchor, constant: 8),
             controlsView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
