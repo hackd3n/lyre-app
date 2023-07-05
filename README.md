@@ -10,6 +10,7 @@ Lyre App is a music player app developed using Swift and Xcode. It allows users 
 - Show album artwork with adjustable size
 - Toggle between different audio stems
 - Adjust volume control
+- Mute/Unmute Instruments
 
 ## Installation
 
