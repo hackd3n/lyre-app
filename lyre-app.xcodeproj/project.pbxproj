@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C304D7F52A5406100010D24A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D7F42A5406100010D24A /* AppDelegate.swift */; };
 		C304D7F72A5406100010D24A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D7F62A5406100010D24A /* SceneDelegate.swift */; };
-		C304D7F92A5406100010D24A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D7F82A5406100010D24A /* ViewController.swift */; };
+		C304D7F92A5406100010D24A /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D7F82A5406100010D24A /* Playlist.swift */; };
 		C304D7FC2A5406100010D24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C304D7FA2A5406100010D24A /* Main.storyboard */; };
 		C304D7FF2A5406100010D24A /* lyre_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C304D7FD2A5406100010D24A /* lyre_app.xcdatamodeld */; };
 		C304D8012A5406140010D24A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C304D8002A5406140010D24A /* Assets.xcassets */; };
@@ -17,6 +17,82 @@
 		C304D80F2A5406140010D24A /* lyre_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D80E2A5406140010D24A /* lyre_appTests.swift */; };
 		C304D8192A5406140010D24A /* lyre_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D8182A5406140010D24A /* lyre_appUITests.swift */; };
 		C304D81B2A5406140010D24A /* lyre_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D81A2A5406140010D24A /* lyre_appUITestsLaunchTests.swift */; };
+		C304D8292A5406D70010D24A /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D8282A5406D70010D24A /* Tracks.swift */; };
+		C304D82B2A5406F80010D24A /* PlayListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D82A2A5406F80010D24A /* PlayListTable.swift */; };
+		C304D8302A541C1F0010D24A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D82F2A541C1F0010D24A /* Player.swift */; };
+		C304D8322A542F800010D24A /* TrackPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304D8312A542F800010D24A /* TrackPlayer.swift */; };
+		C304D83C2A54613D0010D24A /* 01_Kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D83B2A54613D0010D24A /* 01_Kick.mp3 */; };
+		C304D83D2A54613D0010D24A /* 01_Kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D83B2A54613D0010D24A /* 01_Kick.mp3 */; };
+		C304D83E2A54613D0010D24A /* 01_Kick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D83B2A54613D0010D24A /* 01_Kick.mp3 */; };
+		C304D8472A5461740010D24A /* 06_SFX2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D83F2A5461730010D24A /* 06_SFX2.mp3 */; };
+		C304D8482A5461740010D24A /* 06_SFX2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D83F2A5461730010D24A /* 06_SFX2.mp3 */; };
+		C304D8492A5461740010D24A /* 06_SFX2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D83F2A5461730010D24A /* 06_SFX2.mp3 */; };
+		C304D84A2A5461740010D24A /* 10_Synth2_PitchModulated.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8402A5461730010D24A /* 10_Synth2_PitchModulated.mp3 */; };
+		C304D84B2A5461740010D24A /* 10_Synth2_PitchModulated.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8402A5461730010D24A /* 10_Synth2_PitchModulated.mp3 */; };
+		C304D84C2A5461740010D24A /* 10_Synth2_PitchModulated.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8402A5461730010D24A /* 10_Synth2_PitchModulated.mp3 */; };
+		C304D84D2A5461740010D24A /* 08_Bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8412A5461730010D24A /* 08_Bass.mp3 */; };
+		C304D84E2A5461740010D24A /* 08_Bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8412A5461730010D24A /* 08_Bass.mp3 */; };
+		C304D84F2A5461740010D24A /* 08_Bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8412A5461730010D24A /* 08_Bass.mp3 */; };
+		C304D8502A5461740010D24A /* 02_HiHat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8422A5461740010D24A /* 02_HiHat1.mp3 */; };
+		C304D8512A5461740010D24A /* 02_HiHat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8422A5461740010D24A /* 02_HiHat1.mp3 */; };
+		C304D8522A5461740010D24A /* 02_HiHat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8422A5461740010D24A /* 02_HiHat1.mp3 */; };
+		C304D8532A5461740010D24A /* 05_SFX1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8432A5461740010D24A /* 05_SFX1.mp3 */; };
+		C304D8542A5461740010D24A /* 05_SFX1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8432A5461740010D24A /* 05_SFX1.mp3 */; };
+		C304D8552A5461740010D24A /* 05_SFX1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8432A5461740010D24A /* 05_SFX1.mp3 */; };
+		C304D8562A5461740010D24A /* 11_Synth2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8442A5461740010D24A /* 11_Synth2.mp3 */; };
+		C304D8572A5461740010D24A /* 11_Synth2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8442A5461740010D24A /* 11_Synth2.mp3 */; };
+		C304D8582A5461740010D24A /* 11_Synth2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8442A5461740010D24A /* 11_Synth2.mp3 */; };
+		C304D8592A5461740010D24A /* HiHat-Claps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8452A5461740010D24A /* HiHat-Claps.mp3 */; };
+		C304D85A2A5461740010D24A /* HiHat-Claps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8452A5461740010D24A /* HiHat-Claps.mp3 */; };
+		C304D85B2A5461740010D24A /* HiHat-Claps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8452A5461740010D24A /* HiHat-Claps.mp3 */; };
+		C304D85C2A5461740010D24A /* synth-shakers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8462A5461740010D24A /* synth-shakers.mp3 */; };
+		C304D85D2A5461740010D24A /* synth-shakers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8462A5461740010D24A /* synth-shakers.mp3 */; };
+		C304D85E2A5461740010D24A /* synth-shakers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8462A5461740010D24A /* synth-shakers.mp3 */; };
+		C304D8702A547B9E0010D24A /* instrumental.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8612A547B9D0010D24A /* instrumental.mp3 */; };
+		C304D8712A547B9E0010D24A /* instrumental.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8612A547B9D0010D24A /* instrumental.mp3 */; };
+		C304D8722A547B9E0010D24A /* instrumental.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8612A547B9D0010D24A /* instrumental.mp3 */; };
+		C304D8732A547B9E0010D24A /* drums.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8622A547B9D0010D24A /* drums.mp3 */; };
+		C304D8742A547B9E0010D24A /* drums.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8622A547B9D0010D24A /* drums.mp3 */; };
+		C304D8752A547B9E0010D24A /* drums.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8622A547B9D0010D24A /* drums.mp3 */; };
+		C304D8762A547B9E0010D24A /* instrumental (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8632A547B9D0010D24A /* instrumental (CLEAN).mp3 */; };
+		C304D8772A547B9E0010D24A /* instrumental (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8632A547B9D0010D24A /* instrumental (CLEAN).mp3 */; };
+		C304D8782A547B9E0010D24A /* instrumental (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8632A547B9D0010D24A /* instrumental (CLEAN).mp3 */; };
+		C304D8792A547B9E0010D24A /* drums (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8642A547B9D0010D24A /* drums (ORIGINAL).mp3 */; };
+		C304D87A2A547B9E0010D24A /* drums (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8642A547B9D0010D24A /* drums (ORIGINAL).mp3 */; };
+		C304D87B2A547B9E0010D24A /* drums (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8642A547B9D0010D24A /* drums (ORIGINAL).mp3 */; };
+		C304D87C2A547B9E0010D24A /* other (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8652A547B9D0010D24A /* other (ORIGINAL).mp3 */; };
+		C304D87D2A547B9E0010D24A /* other (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8652A547B9D0010D24A /* other (ORIGINAL).mp3 */; };
+		C304D87E2A547B9E0010D24A /* other (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8652A547B9D0010D24A /* other (ORIGINAL).mp3 */; };
+		C304D87F2A547B9E0010D24A /* bass (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8662A547B9D0010D24A /* bass (CLEAN).mp3 */; };
+		C304D8802A547B9E0010D24A /* bass (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8662A547B9D0010D24A /* bass (CLEAN).mp3 */; };
+		C304D8812A547B9E0010D24A /* bass (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8662A547B9D0010D24A /* bass (CLEAN).mp3 */; };
+		C304D8822A547B9E0010D24A /* bass (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8672A547B9D0010D24A /* bass (ORIGINAL).mp3 */; };
+		C304D8832A547B9E0010D24A /* bass (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8672A547B9D0010D24A /* bass (ORIGINAL).mp3 */; };
+		C304D8842A547B9E0010D24A /* bass (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8672A547B9D0010D24A /* bass (ORIGINAL).mp3 */; };
+		C304D8852A547B9E0010D24A /* vocals (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8682A547B9E0010D24A /* vocals (ORIGINAL).mp3 */; };
+		C304D8862A547B9E0010D24A /* vocals (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8682A547B9E0010D24A /* vocals (ORIGINAL).mp3 */; };
+		C304D8872A547B9E0010D24A /* vocals (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8682A547B9E0010D24A /* vocals (ORIGINAL).mp3 */; };
+		C304D8882A547B9E0010D24A /* vocals (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8692A547B9E0010D24A /* vocals (CLEAN).mp3 */; };
+		C304D8892A547B9E0010D24A /* vocals (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8692A547B9E0010D24A /* vocals (CLEAN).mp3 */; };
+		C304D88A2A547B9E0010D24A /* vocals (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D8692A547B9E0010D24A /* vocals (CLEAN).mp3 */; };
+		C304D88B2A547B9E0010D24A /* drums (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86A2A547B9E0010D24A /* drums (CLEAN).mp3 */; };
+		C304D88C2A547B9E0010D24A /* drums (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86A2A547B9E0010D24A /* drums (CLEAN).mp3 */; };
+		C304D88D2A547B9E0010D24A /* drums (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86A2A547B9E0010D24A /* drums (CLEAN).mp3 */; };
+		C304D88E2A547B9E0010D24A /* vocals.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86B2A547B9E0010D24A /* vocals.mp3 */; };
+		C304D88F2A547B9E0010D24A /* vocals.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86B2A547B9E0010D24A /* vocals.mp3 */; };
+		C304D8902A547B9E0010D24A /* vocals.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86B2A547B9E0010D24A /* vocals.mp3 */; };
+		C304D8912A547B9E0010D24A /* bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86C2A547B9E0010D24A /* bass.mp3 */; };
+		C304D8922A547B9E0010D24A /* bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86C2A547B9E0010D24A /* bass.mp3 */; };
+		C304D8932A547B9E0010D24A /* bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86C2A547B9E0010D24A /* bass.mp3 */; };
+		C304D8942A547B9E0010D24A /* other.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86D2A547B9E0010D24A /* other.mp3 */; };
+		C304D8952A547B9E0010D24A /* other.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86D2A547B9E0010D24A /* other.mp3 */; };
+		C304D8962A547B9E0010D24A /* other.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86D2A547B9E0010D24A /* other.mp3 */; };
+		C304D8972A547B9E0010D24A /* instrumental (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86E2A547B9E0010D24A /* instrumental (ORIGINAL).mp3 */; };
+		C304D8982A547B9E0010D24A /* instrumental (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86E2A547B9E0010D24A /* instrumental (ORIGINAL).mp3 */; };
+		C304D8992A547B9E0010D24A /* instrumental (ORIGINAL).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86E2A547B9E0010D24A /* instrumental (ORIGINAL).mp3 */; };
+		C304D89A2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86F2A547B9E0010D24A /* other (CLEAN).mp3 */; };
+		C304D89B2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86F2A547B9E0010D24A /* other (CLEAN).mp3 */; };
+		C304D89C2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C304D86F2A547B9E0010D24A /* other (CLEAN).mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +116,7 @@
 		C304D7F12A5406100010D24A /* lyre-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lyre-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C304D7F42A5406100010D24A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C304D7F62A5406100010D24A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C304D7F82A5406100010D24A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C304D7F82A5406100010D24A /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		C304D7FB2A5406100010D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C304D7FE2A5406100010D24A /* lyre_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lyre_app.xcdatamodel; sourceTree = "<group>"; };
 		C304D8002A5406140010D24A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +127,35 @@
 		C304D8142A5406140010D24A /* lyre-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lyre-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C304D8182A5406140010D24A /* lyre_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lyre_appUITests.swift; sourceTree = "<group>"; };
 		C304D81A2A5406140010D24A /* lyre_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lyre_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C304D8282A5406D70010D24A /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		C304D82A2A5406F80010D24A /* PlayListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTable.swift; sourceTree = "<group>"; };
+		C304D82F2A541C1F0010D24A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C304D8312A542F800010D24A /* TrackPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPlayer.swift; sourceTree = "<group>"; };
+		C304D83A2A5461070010D24A /* 01_Kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Kick.mp3; sourceTree = "<group>"; };
+		C304D83B2A54613D0010D24A /* 01_Kick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Kick.mp3; sourceTree = "<group>"; };
+		C304D83F2A5461730010D24A /* 06_SFX2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_SFX2.mp3; sourceTree = "<group>"; };
+		C304D8402A5461730010D24A /* 10_Synth2_PitchModulated.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10_Synth2_PitchModulated.mp3; sourceTree = "<group>"; };
+		C304D8412A5461730010D24A /* 08_Bass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_Bass.mp3; sourceTree = "<group>"; };
+		C304D8422A5461740010D24A /* 02_HiHat1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_HiHat1.mp3; sourceTree = "<group>"; };
+		C304D8432A5461740010D24A /* 05_SFX1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_SFX1.mp3; sourceTree = "<group>"; };
+		C304D8442A5461740010D24A /* 11_Synth2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11_Synth2.mp3; sourceTree = "<group>"; };
+		C304D8452A5461740010D24A /* HiHat-Claps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "HiHat-Claps.mp3"; sourceTree = "<group>"; };
+		C304D8462A5461740010D24A /* synth-shakers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "synth-shakers.mp3"; sourceTree = "<group>"; };
+		C304D8612A547B9D0010D24A /* instrumental.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = instrumental.mp3; sourceTree = "<group>"; };
+		C304D8622A547B9D0010D24A /* drums.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drums.mp3; sourceTree = "<group>"; };
+		C304D8632A547B9D0010D24A /* instrumental (CLEAN).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "instrumental (CLEAN).mp3"; sourceTree = "<group>"; };
+		C304D8642A547B9D0010D24A /* drums (ORIGINAL).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "drums (ORIGINAL).mp3"; sourceTree = "<group>"; };
+		C304D8652A547B9D0010D24A /* other (ORIGINAL).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "other (ORIGINAL).mp3"; sourceTree = "<group>"; };
+		C304D8662A547B9D0010D24A /* bass (CLEAN).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bass (CLEAN).mp3"; sourceTree = "<group>"; };
+		C304D8672A547B9D0010D24A /* bass (ORIGINAL).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bass (ORIGINAL).mp3"; sourceTree = "<group>"; };
+		C304D8682A547B9E0010D24A /* vocals (ORIGINAL).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "vocals (ORIGINAL).mp3"; sourceTree = "<group>"; };
+		C304D8692A547B9E0010D24A /* vocals (CLEAN).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "vocals (CLEAN).mp3"; sourceTree = "<group>"; };
+		C304D86A2A547B9E0010D24A /* drums (CLEAN).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "drums (CLEAN).mp3"; sourceTree = "<group>"; };
+		C304D86B2A547B9E0010D24A /* vocals.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vocals.mp3; sourceTree = "<group>"; };
+		C304D86C2A547B9E0010D24A /* bass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bass.mp3; sourceTree = "<group>"; };
+		C304D86D2A547B9E0010D24A /* other.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = other.mp3; sourceTree = "<group>"; };
+		C304D86E2A547B9E0010D24A /* instrumental (ORIGINAL).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "instrumental (ORIGINAL).mp3"; sourceTree = "<group>"; };
+		C304D86F2A547B9E0010D24A /* other (CLEAN).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "other (CLEAN).mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +206,18 @@
 		C304D7F32A5406100010D24A /* lyre-app */ = {
 			isa = PBXGroup;
 			children = (
+				C304D8332A54521C0010D24A /* AudioFiles */,
+				C304D82C2A5419810010D24A /* CustomViewElements */,
+				C304D8272A5406CB0010D24A /* Models */,
 				C304D7F42A5406100010D24A /* AppDelegate.swift */,
 				C304D7F62A5406100010D24A /* SceneDelegate.swift */,
-				C304D7F82A5406100010D24A /* ViewController.swift */,
+				C304D7F82A5406100010D24A /* Playlist.swift */,
 				C304D7FA2A5406100010D24A /* Main.storyboard */,
 				C304D8002A5406140010D24A /* Assets.xcassets */,
 				C304D8022A5406140010D24A /* LaunchScreen.storyboard */,
 				C304D8052A5406140010D24A /* Info.plist */,
 				C304D7FD2A5406100010D24A /* lyre_app.xcdatamodeld */,
+				C304D82F2A541C1F0010D24A /* Player.swift */,
 			);
 			path = "lyre-app";
 			sourceTree = "<group>";
@@ -128,6 +237,71 @@
 				C304D81A2A5406140010D24A /* lyre_appUITestsLaunchTests.swift */,
 			);
 			path = "lyre-appUITests";
+			sourceTree = "<group>";
+		};
+		C304D8272A5406CB0010D24A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C304D83A2A5461070010D24A /* 01_Kick.mp3 */,
+				C304D8282A5406D70010D24A /* Tracks.swift */,
+				C304D82A2A5406F80010D24A /* PlayListTable.swift */,
+				C304D8312A542F800010D24A /* TrackPlayer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C304D82C2A5419810010D24A /* CustomViewElements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViewElements;
+			sourceTree = "<group>";
+		};
+		C304D8332A54521C0010D24A /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C304D8602A547B860010D24A /* ABCDEFU */,
+				C304D85F2A54617E0010D24A /* Ubiquitous */,
+			);
+			path = AudioFiles;
+			sourceTree = "<group>";
+		};
+		C304D85F2A54617E0010D24A /* Ubiquitous */ = {
+			isa = PBXGroup;
+			children = (
+				C304D83B2A54613D0010D24A /* 01_Kick.mp3 */,
+				C304D8422A5461740010D24A /* 02_HiHat1.mp3 */,
+				C304D8432A5461740010D24A /* 05_SFX1.mp3 */,
+				C304D83F2A5461730010D24A /* 06_SFX2.mp3 */,
+				C304D8412A5461730010D24A /* 08_Bass.mp3 */,
+				C304D8402A5461730010D24A /* 10_Synth2_PitchModulated.mp3 */,
+				C304D8442A5461740010D24A /* 11_Synth2.mp3 */,
+				C304D8452A5461740010D24A /* HiHat-Claps.mp3 */,
+				C304D8462A5461740010D24A /* synth-shakers.mp3 */,
+			);
+			path = Ubiquitous;
+			sourceTree = "<group>";
+		};
+		C304D8602A547B860010D24A /* ABCDEFU */ = {
+			isa = PBXGroup;
+			children = (
+				C304D8662A547B9D0010D24A /* bass (CLEAN).mp3 */,
+				C304D8672A547B9D0010D24A /* bass (ORIGINAL).mp3 */,
+				C304D86C2A547B9E0010D24A /* bass.mp3 */,
+				C304D86A2A547B9E0010D24A /* drums (CLEAN).mp3 */,
+				C304D8642A547B9D0010D24A /* drums (ORIGINAL).mp3 */,
+				C304D8622A547B9D0010D24A /* drums.mp3 */,
+				C304D8632A547B9D0010D24A /* instrumental (CLEAN).mp3 */,
+				C304D86E2A547B9E0010D24A /* instrumental (ORIGINAL).mp3 */,
+				C304D8612A547B9D0010D24A /* instrumental.mp3 */,
+				C304D86F2A547B9E0010D24A /* other (CLEAN).mp3 */,
+				C304D8652A547B9D0010D24A /* other (ORIGINAL).mp3 */,
+				C304D86D2A547B9E0010D24A /* other.mp3 */,
+				C304D8692A547B9E0010D24A /* vocals (CLEAN).mp3 */,
+				C304D8682A547B9E0010D24A /* vocals (ORIGINAL).mp3 */,
+				C304D86B2A547B9E0010D24A /* vocals.mp3 */,
+			);
+			path = ABCDEFU;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +409,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				C304D8042A5406140010D24A /* LaunchScreen.storyboard in Resources */,
+				C304D8852A547B9E0010D24A /* vocals (ORIGINAL).mp3 in Resources */,
+				C304D8532A5461740010D24A /* 05_SFX1.mp3 in Resources */,
+				C304D8762A547B9E0010D24A /* instrumental (CLEAN).mp3 in Resources */,
+				C304D88B2A547B9E0010D24A /* drums (CLEAN).mp3 in Resources */,
+				C304D8792A547B9E0010D24A /* drums (ORIGINAL).mp3 in Resources */,
+				C304D87C2A547B9E0010D24A /* other (ORIGINAL).mp3 in Resources */,
 				C304D8012A5406140010D24A /* Assets.xcassets in Resources */,
 				C304D7FC2A5406100010D24A /* Main.storyboard in Resources */,
+				C304D8942A547B9E0010D24A /* other.mp3 in Resources */,
+				C304D8732A547B9E0010D24A /* drums.mp3 in Resources */,
+				C304D8562A5461740010D24A /* 11_Synth2.mp3 in Resources */,
+				C304D89A2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */,
+				C304D8822A547B9E0010D24A /* bass (ORIGINAL).mp3 in Resources */,
+				C304D8972A547B9E0010D24A /* instrumental (ORIGINAL).mp3 in Resources */,
+				C304D88E2A547B9E0010D24A /* vocals.mp3 in Resources */,
+				C304D8502A5461740010D24A /* 02_HiHat1.mp3 in Resources */,
+				C304D8592A5461740010D24A /* HiHat-Claps.mp3 in Resources */,
+				C304D8472A5461740010D24A /* 06_SFX2.mp3 in Resources */,
+				C304D84A2A5461740010D24A /* 10_Synth2_PitchModulated.mp3 in Resources */,
+				C304D87F2A547B9E0010D24A /* bass (CLEAN).mp3 in Resources */,
+				C304D8882A547B9E0010D24A /* vocals (CLEAN).mp3 in Resources */,
+				C304D84D2A5461740010D24A /* 08_Bass.mp3 in Resources */,
+				C304D8702A547B9E0010D24A /* instrumental.mp3 in Resources */,
+				C304D83C2A54613D0010D24A /* 01_Kick.mp3 in Resources */,
+				C304D85C2A5461740010D24A /* synth-shakers.mp3 in Resources */,
+				C304D8912A547B9E0010D24A /* bass.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +442,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C304D88F2A547B9E0010D24A /* vocals.mp3 in Resources */,
+				C304D8832A547B9E0010D24A /* bass (ORIGINAL).mp3 in Resources */,
+				C304D8922A547B9E0010D24A /* bass.mp3 in Resources */,
+				C304D83D2A54613D0010D24A /* 01_Kick.mp3 in Resources */,
+				C304D8542A5461740010D24A /* 05_SFX1.mp3 in Resources */,
+				C304D84E2A5461740010D24A /* 08_Bass.mp3 in Resources */,
+				C304D85A2A5461740010D24A /* HiHat-Claps.mp3 in Resources */,
+				C304D8712A547B9E0010D24A /* instrumental.mp3 in Resources */,
+				C304D88C2A547B9E0010D24A /* drums (CLEAN).mp3 in Resources */,
+				C304D84B2A5461740010D24A /* 10_Synth2_PitchModulated.mp3 in Resources */,
+				C304D8862A547B9E0010D24A /* vocals (ORIGINAL).mp3 in Resources */,
+				C304D87A2A547B9E0010D24A /* drums (ORIGINAL).mp3 in Resources */,
+				C304D85D2A5461740010D24A /* synth-shakers.mp3 in Resources */,
+				C304D8572A5461740010D24A /* 11_Synth2.mp3 in Resources */,
+				C304D8772A547B9E0010D24A /* instrumental (CLEAN).mp3 in Resources */,
+				C304D8952A547B9E0010D24A /* other.mp3 in Resources */,
+				C304D8512A5461740010D24A /* 02_HiHat1.mp3 in Resources */,
+				C304D8482A5461740010D24A /* 06_SFX2.mp3 in Resources */,
+				C304D8982A547B9E0010D24A /* instrumental (ORIGINAL).mp3 in Resources */,
+				C304D87D2A547B9E0010D24A /* other (ORIGINAL).mp3 in Resources */,
+				C304D8802A547B9E0010D24A /* bass (CLEAN).mp3 in Resources */,
+				C304D89B2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */,
+				C304D8892A547B9E0010D24A /* vocals (CLEAN).mp3 in Resources */,
+				C304D8742A547B9E0010D24A /* drums.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +473,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C304D8902A547B9E0010D24A /* vocals.mp3 in Resources */,
+				C304D8842A547B9E0010D24A /* bass (ORIGINAL).mp3 in Resources */,
+				C304D8932A547B9E0010D24A /* bass.mp3 in Resources */,
+				C304D83E2A54613D0010D24A /* 01_Kick.mp3 in Resources */,
+				C304D8552A5461740010D24A /* 05_SFX1.mp3 in Resources */,
+				C304D84F2A5461740010D24A /* 08_Bass.mp3 in Resources */,
+				C304D85B2A5461740010D24A /* HiHat-Claps.mp3 in Resources */,
+				C304D8722A547B9E0010D24A /* instrumental.mp3 in Resources */,
+				C304D88D2A547B9E0010D24A /* drums (CLEAN).mp3 in Resources */,
+				C304D84C2A5461740010D24A /* 10_Synth2_PitchModulated.mp3 in Resources */,
+				C304D8872A547B9E0010D24A /* vocals (ORIGINAL).mp3 in Resources */,
+				C304D87B2A547B9E0010D24A /* drums (ORIGINAL).mp3 in Resources */,
+				C304D85E2A5461740010D24A /* synth-shakers.mp3 in Resources */,
+				C304D8582A5461740010D24A /* 11_Synth2.mp3 in Resources */,
+				C304D8782A547B9E0010D24A /* instrumental (CLEAN).mp3 in Resources */,
+				C304D8962A547B9E0010D24A /* other.mp3 in Resources */,
+				C304D8522A5461740010D24A /* 02_HiHat1.mp3 in Resources */,
+				C304D8492A5461740010D24A /* 06_SFX2.mp3 in Resources */,
+				C304D8992A547B9E0010D24A /* instrumental (ORIGINAL).mp3 in Resources */,
+				C304D87E2A547B9E0010D24A /* other (ORIGINAL).mp3 in Resources */,
+				C304D8812A547B9E0010D24A /* bass (CLEAN).mp3 in Resources */,
+				C304D89C2A547B9F0010D24A /* other (CLEAN).mp3 in Resources */,
+				C304D88A2A547B9E0010D24A /* vocals (CLEAN).mp3 in Resources */,
+				C304D8752A547B9E0010D24A /* drums.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +507,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C304D7F92A5406100010D24A /* ViewController.swift in Sources */,
+				C304D7F92A5406100010D24A /* Playlist.swift in Sources */,
+				C304D8292A5406D70010D24A /* Tracks.swift in Sources */,
+				C304D82B2A5406F80010D24A /* PlayListTable.swift in Sources */,
 				C304D7FF2A5406100010D24A /* lyre_app.xcdatamodeld in Sources */,
+				C304D8302A541C1F0010D24A /* Player.swift in Sources */,
 				C304D7F52A5406100010D24A /* AppDelegate.swift in Sources */,
+				C304D8322A542F800010D24A /* TrackPlayer.swift in Sources */,
 				C304D7F72A5406100010D24A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,16 +689,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZW99DSFZK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "lyre-app/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,9 +708,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "denis-hackett.lyre-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,16 +722,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZW99DSFZK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "lyre-app/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,9 +741,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "denis-hackett.lyre-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
